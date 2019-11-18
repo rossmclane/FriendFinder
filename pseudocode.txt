@@ -1,0 +1,18 @@
+homepage
+- Button to nagivate to survey page
+- On click, do an ajax get request to the homepage url and return the survey file
+
+survey page
+- Form
+- On submit
+    - Make a post request to the page
+    - Store the JSON object in memory
+    - Compare all characters and return the ones that match the most
+    - Display the modal with that person's name and picture
+
+
+server js
+- "/" = homepage.html
+- "/survey" = survey.html
+- "/api/survey"
+    - POST request - posts the person object to objects list
