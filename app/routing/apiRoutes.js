@@ -8,8 +8,8 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
     friends.push(req.body);
-    console.log(friends);
-    res.end();
+    // Logic to find the correct match, then send that match back
+    res.send(friends[0]);
   });
 
 };

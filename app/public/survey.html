@@ -1,12 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1> Survey </h1>
+    <div class="container">
+        <div class="jumbotron">
+            <h3>Survey</h3>
+            <hr>
+            <div class="form-group">
+                <label>Name (Required)</label>
+                <input class="form-control" id="name" placeholder="Your Name">
+            </div>
+
+            <div class="form-group">
+                <label>Link to Picture (Required)</label>
+                <input class="form-control" id="picture-link" placeholder="Link to your profile picture">
+            </div>
+
+            <br>
+
+            <div style="color: grey;"> Answer the survey with an answer of 1 to 5. (1 meaning that you strongly
+                disagree, 5 that you strongly agree.)</div>
+
+            <br>
+
+            <div class="form-group">
+                <h5>Question 1</h5>
+                <label for="exampleSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <select class="form-control" id="question1" style="width: 60px">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h5>Question 2</h5>
+                <label for="exampleSelect1">Generally speaking, you rely more on your experience than your
+                    imagination.
+                </label>
+                <select class="form-control" id="question2" style="width: 60px">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h5>Question 3</h5>
+                <label for="exampleSelect1">You find it easy to stay relaxed and focused even when there is some
+                    pressure.
+                </label>
+                <select class="form-control" id="question3" style="width: 60px">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h5>Question 4</h5>
+                <label for="exampleSelect1">You rarely do something just out of sheer curiosity.
+                </label>
+                <select class="form-control" id="question4" style="width: 60px">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h5>Question 5</h5>
+                <label for="exampleSelect1">People can rarely upset you.
+                </label>
+                <select class="form-control" id="question5" style="width: 60px">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h5>Question 6</h5>
+                <label for="exampleSelect1">It is often difficult for you to relate to other people’s feelings.
+                </label>
+                <select class="form-control" id="question6" style="width: 60px">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h5>Question 7</h5>
+                <label for="exampleSelect1">In a discussion, truth should be more important than people’s
+                    sensitivities.
+                </label>
+                <select class="form-control" id="question7" style="width: 60px">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h5>Question 8</h5>
+                <label for="exampleSelect1">You rarely get carried away by fantasies and ideas.
+                </label>
+                <select class="form-control" id="question8" style="width: 60px">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h5>Question 9</h5>
+                <label for="exampleSelect1">You think that everyone’s views should be respected regardless of
+                    whether they are supported by facts or not.
+                </label>
+                <select class="form-control" id="question9" style="width: 60px">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h5>Question 10</h5>
+                <label for="exampleSelect1">You feel more energetic after spending time with a group of people.
+                </label>
+                <select class="form-control" id="question10" style="width: 60px">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <button id="submit" class="btn btn-primary">Submit</button>
+            <p>
+                <a href="/api/friends"> API Friends List</a>
+                |
+                <a href="https://github.com/rossmclane/FriendFinder"> Github Repo</a>
+            </p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            console.log("There was a click");
+            event.preventDefault();
+
+            var userData = {
+                name: $("#name").val(),
+                photo: $("#picture-link").val(),
+                points: [
+                    $("#question1").val(),
+                    $("#question2").val(),
+                    $("#question3").val(),
+                    $("#question4").val(),
+                    $("#question5").val(),
+                    $("#question6").val(),
+                    $("#question7").val(),
+                    $("#question8").val(),
+                    $("#question9").val(),
+                    $("#question10").val()
+                ]
+            };
+
+            $.post("/api/friends", userData, function (data) {
+
+                //   Create a modal and diplay the data
+                $('#exampleModal').modal('toggle');
+
+            });
+        });
+    </script>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+
 </html>
