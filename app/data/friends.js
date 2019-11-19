@@ -1,5 +1,1 @@
-module.exports = [
-    {
-        hello: "goodbye"
-    }
-];
+module.exports = [];
