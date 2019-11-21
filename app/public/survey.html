@@ -175,7 +175,7 @@
 
             var userData = {
                 name: $("#name").val(),
-                photo: $("#picture-link").val(),
+                picture: $("#picture-link").val(),
                 points: [
                     $("#question1").val(),
                     $("#question2").val(),
@@ -194,8 +194,9 @@
                 
                 if ($("#name").val()) {
                     $("#match_name").text(data.name);
+                    console.log(data);
                     if (data.picture){
-                        $("picture").css('visibility','visible');
+                        $("#picture").css('visibility','visible');
                         $("#picture").attr("src", data.picture);
                     } else {
                         $("#picture").attr("src", "");
