@@ -9,4 +9,4 @@
 The only developer on this project was me.
 
 ![First Image](/assets/img/homepage.png)
-![Second Image](/assets/img/Survey.png)
+![Second Image](/assets/img/Survey1.png)
