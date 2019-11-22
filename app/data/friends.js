@@ -11,7 +11,7 @@ module.exports = [
     },
     {
         name: "Damien",
-        picture: "",
+        picture: "https://images.unsplash.com/photo-1573073009227-fc98fd1caa62?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
         points: ["1", "3", "1", "1", "1", "1", "1", "1", "1", "1"]
     }
 ];
